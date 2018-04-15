@@ -5,8 +5,8 @@ from odoo import api, fields, models
 from odoo.exceptions import UserError
 
 
-class Edificio(models.Model):
-    _name = 'doc_alquileres.Edificio'
+class edificio(models.Model):
+    _name = 'doc_alquileres.edificios'
     id = fields.Integer()
     nombre = fields.Char()
     direccion = fields.Char()

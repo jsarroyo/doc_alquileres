@@ -3,9 +3,9 @@
 
     <record model="ir.ui.view" id="nursery_plant_form">
         <field name="name">Pisos Form View</field>
-        <field name="model">doc_alquileres.Piso</field>
+        <field name="model">doc_alquileres.pisos</field>
         <field name="arch" type="xml">
-            <form string="Piso">
+            <form string="piso">
                 <sheet>
                     <h1>
                         Numero de piso

@@ -3,12 +3,12 @@
 
     <record model="ir.ui.view" id="nursery_plant_form">
         <field name="name">Edificio Form View</field>
-        <field name="model">doc_alquileres.Edificio</field>
+        <field name="model">doc_alquileres.edificios</field>
         <field name="arch" type="xml">
-            <form string="Edificio">
+            <form string="edificio">
                 <sheet>
                     <h1>
-                        <field name="name" placeholder="Nombre del Edificio"/>
+                        <field name="nombre" placeholder="Nombre del Edificio"/>
                     </h1>
                     <notebook>
                         <page string="Shop">

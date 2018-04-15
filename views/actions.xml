@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem name="Documentos de Alquiler" id="alquileres_root_menu"/>
+
+    <record model="ir.actions.act_window" id="action_alquileres_edificio">
+        <field name="name">Edificio</field>
+        <field name="res_model">doc_alquileres.edificios</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_alquileres_piso">
+        <field name="name">Pisos</field>
+        <field name="res_model">doc_alquileres.pisos</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_alquileres_local">
+        <field name="name">Local</field>
+        <field name="res_model">doc_alquileres.locales</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Edificio" id="alquileres_edificio_menu" parent="alquileres_root_menu"
+              sequence="1" action="action_alquileres_edificio"/>
+
+    <menuitem name="Pisos" id="alquileres_piso_menu" parent="alquileres_root_menu"
+              sequence="2" action="action_alquileres_piso"/>
+
+    <menuitem name="Local" id="alquileres_local_menu" parent="alquileres_root_menu"
+              sequence="3" action="action_alquileres_local"/>
+
+
+</odoo>

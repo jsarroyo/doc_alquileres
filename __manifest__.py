@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "DocAlquileres",
+    'name': "doc_alquileres",
 
     'summary': """
         Documentos de alquiler""",
@@ -24,10 +24,10 @@
     
     # always loaded
     'data': [
-        'data/actions.xml',
-        'data/edificio_views.xml',
-        'data/piso_views.xml',
-        'data/local_views.xml',
+        'views/actions.xml',
+        'views/edificio_views.xml',
+        'views/piso_views.xml',
+        'views/local_views.xml',
     ],
     'demo': [
     ],
