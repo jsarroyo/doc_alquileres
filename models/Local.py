@@ -6,11 +6,10 @@ from odoo.exceptions import UserError
 
 
 class Local(models.Model):
-    _name = 'Alquileres.Local'
-
-    numero  = fields.Integer() 
+    _name = 'doc_alquileres.Local'
+    id = fields.Integer()
     area_M2 = fields.Float()
-	numero_medidor_electrico = fields.Char("# Medidor de electricidad")
-	numero_medidor_agua = fields.Char("#Medidor de acueducto")
-	piso_id = fields.Integer()
-	edificio_id = fields.Integer()
+    medidor_electrico  = fields.Char()
+    medidor_agua = fields.Char()
+    piso_id = fields.Integer()
+    edificio_id = fields.Integer()

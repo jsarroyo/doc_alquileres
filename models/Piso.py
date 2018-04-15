@@ -6,7 +6,7 @@ from odoo.exceptions import UserError
 
 
 class Piso(models.Model):
-    _name = 'Alquileres.Piso'
+    _name = 'doc_alquileres.Piso'
 
-    numero = fields.Integer() 
+    id = fields.Integer() 
     edificio_id = fields.Integer()

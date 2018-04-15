@@ -3,19 +3,20 @@
 
     <record model="ir.ui.view" id="nursery_plant_form">
         <field name="name">Pisos Form View</field>
-        <field name="model">Alquileres.Piso</field>
+        <field name="model">doc_alquileres.Piso</field>
         <field name="arch" type="xml">
             <form string="Piso">
                 <sheet>
                     <h1>
-                        <field name="numero" placeholder="Numero de piso"/>
+                        Numero de piso
                     </h1>
                     <notebook>
                         <page string="Shop">
                             <group>
-                                <field name="numero"/> 
                                 <field name="edificio_id"/>
                             </group>
+                        </page> 
+                        <page string="Shop2">
                         </page> 
                     </notebook>
                 </sheet>

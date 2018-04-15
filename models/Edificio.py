@@ -6,16 +6,16 @@ from odoo.exceptions import UserError
 
 
 class Edificio(models.Model):
-    _name = 'Alquileres.Edificio'
-
+    _name = 'doc_alquileres.Edificio'
     id = fields.Integer()
-    nombre = fields.Char("Nombre del Edificio")
-    direccion = fields.Char("Direccion del Edificio")
+    nombre = fields.Char()
+    direccion = fields.Char()
     area_terreno  = fields.Float()
     area_construida  = fields.Float()
-    valor_real   = fields.Float()
-    valor_fiscal  = fields.Float()
-    lista_pisos = fields.One2many("Alquileres.Piso", "piso_id", string="Pisos")
+    valor_real  = fields.Float()
+    valor_fiscal = fields.Float()
+    #lista_pisos = fields.One2many("Alquileres.Piso", "numero", string="Pisos")
+
     #order_count = fields.Integer(compute='_get_total_sold',
     #                             store=True,
     #                             string="Total sold")
