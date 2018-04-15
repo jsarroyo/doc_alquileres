@@ -3,8 +3,7 @@
     'name': "DocAlquileres",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Documentos de alquiler""",
 
     'description': """
         Long description of module's purpose
@@ -16,20 +15,24 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'category': 'Bienes inmuebles',
+    'version': '1.0',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
-
+    #'depends': ['base'],
+    'depends': ['web'],
+    
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'data/actions.xml',
+        'data/edificio_views.xml',
+        'data/piso_views.xml',
+        'data/local_views.xml',
     ],
-    # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
     ],
+    'css': [],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
 }
