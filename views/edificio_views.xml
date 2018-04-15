@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="nursery_plant_form">
+        <field name="name">Edificio Form View</field>
+        <field name="model">Alquileres.Edificio</field>
+        <field name="arch" type="xml">
+            <form string="Edificio">
+                <sheet>
+                    <h1>
+                        <field name="nombre" placeholder="Nombre del Edificio"/>
+                    </h1>
+                    <notebook>
+                        <page string="Shop">
+                            <group>
+                                <field name="direccion"/>
+                                <field name="area_terreno"/>
+                                <field name="area_construida"/>
+
+                                <field name="valor_real"/>
+                                <field name="valor_fiscal"/>
+                            </group>
+                        </page>
+                        <page string="Orders">
+                            <field name="order_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="nursery_plant_form">
+        <field name="name">Pisos Form View</field>
+        <field name="model">Alquileres.Local</field>
+        <field name="arch" type="xml">
+            <form string="Local">
+                <sheet>
+                    <h1>
+                        <field name="numero" placeholder="Numero del Local"/>
+                    </h1>
+                    <notebook>
+                        <page string="Shop">
+                            <group>
+                                <field name="numero"/> 
+                                <field name="area_M2"/>
+                                <field name="numero_medidor_electrico"/>
+                                <field name="numero_medidor_agua"/>
+                                <field name="piso_id"/>
+                                <field name="edificio_id"/>
+                            </group>
+                        </page> 
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
